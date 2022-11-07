@@ -666,6 +666,12 @@ footer p {
     .filters h3 {
         margin: 0;
     }
+
+    .btn-filter p {
+        padding-right: 15px;
+        transition: all 0.2s;
+    }
+
     .fa-solid.fa-info {
         min-width: 25px;
     }
@@ -775,10 +781,10 @@ footer p {
 }
 
 
-@media (min-width: 368px) and (max-width: 532px) {
+@media (min-width: 320px) and (max-width: 532px) {
     #img-logo {
         margin-top: 50px;
-        margin-left: 65px;
+        margin-left: 100px;
         width: 50%;
     }
 }
