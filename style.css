@@ -159,6 +159,7 @@ nav {
 form {
     display: inline-block;
     width: 100%;
+    margin-bottom: 25px;
 }
 
 form i {
@@ -603,7 +604,18 @@ footer p {
 
 }
 
+/* 
+*   Section: Search bar 
+*/   
 
+
+@media (min-width: 320px) and (max-width:349px){
+  
+}
+@media (min-width: 350px) and (max-width:768px){
+    
+    
+}
 
 @media (max-width: 768px) {
     * {
@@ -638,9 +650,6 @@ footer p {
         border-bottom-color: var(--blue);  
     }
 
-    /* 
-    *   Section: Search bar 
-    */   
     .fa-solid.fa-magnifying-glass {
         display: inline;
         background-color: var(--blue);
@@ -648,11 +657,12 @@ footer p {
         font-size: 15px;
         padding: 0;
     }
+    /*hide for small device*/
+
     .btn-search span {
         display: none;
     }
-    
-    
+ 
     /* 
     *       filters 
     */
@@ -784,7 +794,14 @@ footer p {
 @media (min-width: 320px) and (max-width: 532px) {
     #img-logo {
         margin-top: 50px;
-        margin-left: 100px;
+        margin-left: 65px;
         width: 50%;
-    }
+    } 
 }
+
+@media (min-width: 320px) and (max-width: 350px) {
+    form button {
+        margin-left: -30px;
+    } 
+}
+
