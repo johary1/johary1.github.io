@@ -2,7 +2,6 @@
     box-sizing: border-box; /* Opera/IE 8+ */
     -moz-box-sizing: border-box; /* Firefox, autres Gecko */
     -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
-
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: -moz-none;
@@ -30,8 +29,6 @@
 */
 body {
     font-family: "Raleway", "sans-serif";
-    
-    
 }
 a {
     text-decoration: none; 
@@ -209,8 +206,6 @@ form button:hover {
     display: none;  
 }
 
-
-
 /* 
 ^----------------------
 *       FILTERS     
@@ -232,23 +227,21 @@ form button:hover {
     margin: 0;
     padding-right: 20px;
     cursor: pointer;
-    border-radius: 30px;
-    
+    border-radius: 30px;    
 }
 
 .btn-filter {
     font-weight: bold;
     border: 2px solid var(--lightgrey);
     border-radius: 30px;
-   
 }
 
 
 .btn-filter:hover{
     background-color: var(--lightblue);
     box-shadow: 0 0 8px var(--blue);
-   
-    
+    border-radius: 30px;
+    transition: all 1s ease;
 }
 
 .btn-filter .fa-child-reaching {
@@ -306,8 +299,6 @@ form button:hover {
 .all-articles .popular {
     flex-basis: 33%;
 }
-
-
 
 /* 
 *    ARTICLES --> HEBERGMENTS     
@@ -433,8 +424,6 @@ form button:hover {
     margin-top: auto;
 }
 
-
-
 /* 
 *    ACTIVITIES IN MARSEILLE     
 */
@@ -486,7 +475,6 @@ form button:hover {
     height: 90%;
 }
 
-
 /* 
 ^       def: stars color 
 */
@@ -501,9 +489,6 @@ form button:hover {
 }
 
 
-
-
-
 /* 
 *      FOOTER     
 */
@@ -515,7 +500,6 @@ footer {
     gap: 20px;
     background-color: var(--lightgrey);
     padding: 30px 0;
-    
 }
 footer a {
     text-decoration: none;
@@ -535,9 +519,6 @@ footer p {
     min-width: 30%;
     min-height: 100px;
 }
-
-
-
 
 /* 
 *       MEDIA QUERIES
@@ -567,7 +548,7 @@ footer p {
 @media (max-width: 992px) {
 
     /* 
-    *       hébergments 
+    *       room 
     */
     .all-articles {
         flex-direction: column-reverse;
@@ -634,7 +615,7 @@ footer p {
         flex-basis: 50%;
         text-align: center;
         justify-content: center;
-        border-bottom: 3px solid lightgrey;
+        border-bottom: 3px solid var(--lightgrey);
     }
     .bloc-menu a:hover {
         border-top-color: transparent;
@@ -682,7 +663,7 @@ footer p {
 
 
     /* 
-    *       hébergments 
+    *       room 
     */
     .all-articles {
         flex-direction: column-reverse;
@@ -750,7 +731,7 @@ footer p {
 
 @media (max-width: 768px) {
     /* 
-    *       activités 
+    *       activity
     */
     .activites {
         margin: 40px 0 20px 0;
