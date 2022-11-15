@@ -431,16 +431,7 @@ form button:hover {
     margin: 40px 10px 20px 10px;
    
 }
-/*.activites-list {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    transition: all 0.2s;
-    gap: 20px;
-    
-    
-}*/
+
 .vertical-center {
     display: flex;
     align-items: center;
@@ -532,8 +523,8 @@ footer p {
 *       MEDIA QUERIES
 */
 
+@media (max-width: 992px) {
 
-@media (max-width: 904px) {
     /* make title taking all width in small screen among all flex items*/
     .title-filter {
         flex: 1 0 100%;
@@ -544,16 +535,6 @@ footer p {
         min-width: 50%;
        
     } 
-}
-/*@media (max-width: 1115px) {
-    
-    .card-100 {
-        flex-basis: 25%;
-    }
-   
-}*/
-
-@media (max-width: 992px) {
 
     /* 
     *       room 
@@ -567,7 +548,6 @@ footer p {
     
     .popular {
         background-color: #F2F2F2 !important;
-        /*padding: 20px;*/
     }
 
     .popular-list, 
@@ -594,6 +574,7 @@ footer p {
     .all-articles .popular {
         
         border-radius: inherit;
+        margin: 0 -15px;
     }
     #link-more {
         display: none;
@@ -605,6 +586,7 @@ footer p {
     * {
         margin-left: 0px;
     }
+   
 
     /*
     *   section: menu 
@@ -705,7 +687,6 @@ footer p {
     *       popular 
     */
     .popular {
-        padding-left: 0;
         background-color: var(--lightgrey);
         border-radius: 0;
     }
